@@ -1,0 +1,18 @@
+{
+  "name": "Ad Muter for ParamountPlus",
+  "description": "Mutes ads on ParamountPlus",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.paramountplus.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": "hello_extensions.png"
+  }
+}
